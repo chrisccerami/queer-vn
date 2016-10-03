@@ -1,0 +1,12 @@
+body {
+  margin: 0px;
+}
+
+#header {
+  background-color: turquoise;
+  color: blueviolet;
+  font-size: 48px;
+  font-weight: bold;
+  font-family: sans-serif;
+  text-align: center;
+}
