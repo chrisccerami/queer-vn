@@ -1,0 +1,55 @@
+#cuties {
+  .current {
+    .profile-left {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      margin-left: 5%;
+      margin-right: 2.5%;
+      width: 40%;
+      padding: 10px;
+      border: 1px solid #8A2BE2;
+      text-align: center;
+      display: inline-block;
+      vertical-align: top;
+
+      img {
+        height: 400px;
+      }
+    }
+
+    .profile-right {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      margin-left: 2.5%;
+      margin-right: 5%;
+      padding: 10px;
+      display: inline-block;
+
+      .info {
+        height: 300px;
+
+        .name {
+          font-size: 24px;
+          margin-bottom: 10px;
+        }
+      }
+
+      .hi-or-bi {
+        button {
+          height: 100px;
+          width: 150px;
+          font-size: 48px;
+          background-color: #40E0D0;
+          color: #8A2BE2;
+          border-radius: 15px;
+          margin: 0px 10px;
+        }
+
+        .reject-button {
+          background-color: #FC312A;
+          color: #fff;
+        }
+      }
+    }
+  }
+}
