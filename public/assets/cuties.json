@@ -1,0 +1,18 @@
+{
+  "cuties": [
+    {
+      "id": 1,
+      "firstName": "Lee",
+      "lastName": "Détroit",
+      "age": 22,
+      "description": "Adorable Montreal native, art student"
+    },
+    {
+      "id": 2,
+      "firstName": "Fran",
+      "lastName": "",
+      "age": 25,
+      "description": "Drag king, bard, mystery"
+    }
+  ]
+}

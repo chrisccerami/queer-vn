@@ -7,8 +7,7 @@ export default Ember.Service.extend({
     const cookieService = this.get('cookieService');
     let value = this.arrayify(cookieService.read(key));
     value.push(element);
-    value = value.join(',');
-    cookieService.write(key, value);
+    cookieService.write(key, JSON.stringify(value));
   },
 
   getArray(key) {
@@ -30,7 +29,7 @@ export default Ember.Service.extend({
 
   arrayify(value) {
     if (value) {
-      return value.split(',');
+      return JSON.parse(value);
     } else {
       return [];
     }
