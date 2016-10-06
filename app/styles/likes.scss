@@ -1,0 +1,24 @@
+#likes {
+  .left-side {
+    width: 30%;
+
+    .title {
+      text-align: center;
+      padding: 10px;
+    }
+
+    ul {
+      margin: 0px;
+      padding: 0px;
+      display: inline-block;
+      list-style: none;
+      width: 100%;
+
+      li {
+        padding: 20px;
+        font-size: 24px;
+        border: 1px solid;
+      }
+    }
+  }
+}
