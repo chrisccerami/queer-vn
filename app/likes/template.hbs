@@ -1,0 +1,12 @@
+<div id="likes">
+  <div class="left-side">
+    <div class="title">Cuties you've liked</div>
+    <ul>
+      {{#each model as |cutie|}}
+      <li>
+        {{cutie.firstName}} {{cutie.lastName}}, {{cutie.age}}
+      </li>
+      {{/each}}
+    </ul>
+  </div>
+</div>
