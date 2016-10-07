@@ -4,7 +4,7 @@
     <ul>
       {{#each model as |cutie|}}
       <li class={{if (eq cutie.id activeCutie.id) "active" "inactive"}} {{action "select" cutie}}>
-        {{cutie.firstName}} {{cutie.lastName}}, {{cutie.age}}
+        {{cutie.name}}, {{cutie.age}}
       </li>
       {{/each}}
     </ul>

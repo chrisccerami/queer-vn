@@ -10,6 +10,6 @@ export default DS.Model.extend({
   description: DS.attr('string'),
 
   name: Ember.computed('firstName', 'lastName', function() {
-    return `${this.get('firstName')} ${this.get('lastName')}`;
+    return `${this.get('firstName')} ${this.get('lastName')}`.trim();
   })
 });

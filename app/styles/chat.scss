@@ -1,0 +1,31 @@
+.chat-screen {
+  width: 99%;
+  max-height: calc(100vh - 10%);
+}
+
+.chat-message {
+  width: 100%;
+  margin: 5px;
+
+  .content {
+    padding: 5px;
+    display: inline-block;
+    border-radius: 20px;
+  }
+
+  .incoming {
+    text-align: left;
+
+    .content {
+      background-color: #40E0D0;
+    }
+  }
+
+  .outgoing {
+    text-align: right;
+
+    .content {
+      background-color: #C9FAFC;
+    }
+  }
+}
