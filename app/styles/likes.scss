@@ -1,6 +1,8 @@
 #likes {
   .left-side {
     width: 30%;
+    vertical-align: top;
+    display: inline-block;
 
     .title {
       text-align: center;
@@ -8,17 +10,29 @@
     }
 
     ul {
-      margin: 0px;
+      margin: 0px 0px 0px 5%;
       padding: 0px;
       display: inline-block;
       list-style: none;
-      width: 100%;
+      width: 95%;
 
       li {
         padding: 20px;
         font-size: 24px;
         border: 1px solid;
+
+        &.active {
+          background-color: #40E0D0;
+        }
       }
     }
+  }
+
+  .right-side {
+    border: 1px #8A2BE2 solid;
+    display: inline-block;
+    width: 60%;
+    height: 100vh;
+    margin: 2% 4.5%;
   }
 }

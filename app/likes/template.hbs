@@ -3,10 +3,16 @@
     <div class="title">Cuties you've liked</div>
     <ul>
       {{#each model as |cutie|}}
-      <li>
+      <li class={{if (eq cutie.id activeCutie.id) "active" "inactive"}} {{action "select" cutie}}>
         {{cutie.firstName}} {{cutie.lastName}}, {{cutie.age}}
       </li>
       {{/each}}
     </ul>
+  </div>
+
+  <div class="right-side">
+    {{#if activeCutie}}
+      {{chat-screen cutie=activeCutie}}
+    {{/if}}
   </div>
 </div>

@@ -1,0 +1,16 @@
+{
+  "messages": [
+    {
+      "id": 1, "incoming": true,
+      "content": "Hey there!"
+    },
+    {
+      "id": 2, "incoming": false,
+      "content": "Yo"
+    },
+    {
+      "id": 3, "incoming": true,
+      "content": "What's up?"
+    }
+  ]
+}
