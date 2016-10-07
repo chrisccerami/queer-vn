@@ -15,6 +15,18 @@ export default Ember.Service.extend({
     return this.arrayify(cookieService.read(key));
   },
 
+  writeKeyValue(key, objectKey, objectValue) {
+    const cookieService = this.get('cookieService');
+    let value = this.objectify(cookieService.read(key));
+    value.objectKey = objectValue;
+    cookieService.write(key, JSON.stringify(value));
+  },
+
+  getObjectValue(key, objectKey) {
+    const cookieService = this.get('cookieService');
+    return this.objectify(cookieService.read(key)).objectKey;
+  },
+
   clear(key) {
     const cookieService = this.get('cookieService');
     cookieService.clear(key);
@@ -28,10 +40,18 @@ export default Ember.Service.extend({
   },
 
   arrayify(value) {
+    return parsedWithDefault(value, []);
+  },
+
+  objectify(value) {
+    return parsedWithDefault(value, {});
+  },
+
+  parsedWithDefault(value, defaultValue) {
     if (value) {
       return JSON.parse(value);
     } else {
-      return [];
+      return defaultValue;
     }
   }
 });
