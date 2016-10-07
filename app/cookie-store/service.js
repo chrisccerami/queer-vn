@@ -4,10 +4,22 @@ export default Ember.Service.extend({
   cookieService: Ember.inject.service('cookies'),
 
   push(key, element) {
+    this.writeToStructure([], key, element);
+  },
+
+  writeKeyValue(key, objectKey, objectValue) {
+    this.writeToStructure({}, key, objectKey, objectValue);
+  },
+
+  writeToStructure(defaultStructure, key, element, value) {
     const cookieService = this.get('cookieService');
-    let value = this.arrayify(cookieService.read(key));
-    value.push(element);
-    cookieService.write(key, JSON.stringify(value));
+    let structure = this.parsedWithDefault(cookieService.read(key), defaultStructure);
+    if (Array.isArray(structure)) {
+      structure.push(element);
+    } else {
+      structure.element = value;
+    }
+    cookieService.write(key, JSON.stringify(structure));
   },
 
   getArray(key) {
@@ -15,16 +27,9 @@ export default Ember.Service.extend({
     return this.arrayify(cookieService.read(key));
   },
 
-  writeKeyValue(key, objectKey, objectValue) {
-    const cookieService = this.get('cookieService');
-    let value = this.objectify(cookieService.read(key));
-    value.objectKey = objectValue;
-    cookieService.write(key, JSON.stringify(value));
-  },
-
   getObjectValue(key, objectKey) {
     const cookieService = this.get('cookieService');
-    return this.objectify(cookieService.read(key)).objectKey;
+    return this.objectify(cookieService.read(key))[objectKey];
   },
 
   clear(key) {
@@ -40,11 +45,11 @@ export default Ember.Service.extend({
   },
 
   arrayify(value) {
-    return parsedWithDefault(value, []);
+    return this.parsedWithDefault(value, []);
   },
 
   objectify(value) {
-    return parsedWithDefault(value, {});
+    return this.parsedWithDefault(value, {});
   },
 
   parsedWithDefault(value, defaultValue) {
