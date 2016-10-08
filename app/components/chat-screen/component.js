@@ -6,7 +6,7 @@ export default Ember.Component.extend({
 
   store: Ember.inject.service(),
 
-  init() {
+  didReceiveAttrs() {
     this._super(...arguments);
     this.set('seenMessageIds', [1]);
     this.get('store').query('message', {
