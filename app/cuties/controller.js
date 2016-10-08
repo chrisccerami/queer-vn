@@ -9,14 +9,14 @@ export default Ember.Controller.extend({
 
   actions: {
     rejectCutie(cutie) {
-      this.get('cookieStore').push('seen', cutie.id);
+      this.get('cookieStore').push('seenCutieIds', cutie.id);
       this.get('model').removeObject(cutie);
     },
 
     likeCutie(cutie) {
       let cookies = this.get('cookieStore');
-      cookies.push('seen', cutie.id);
-      cookies.push('liked', cutie.id);
+      cookies.push('seenCutieIds', cutie.id);
+      cookies.push('likedCutieIds', cutie.id);
       this.get('model').removeObject(cutie);
     },
 

@@ -5,7 +5,7 @@ export default Ember.Route.extend({
 
   model() {
     // this.get('cookieStore').clearAll(); // for development purposes only
-    let seenIds = this.get('cookieStore').getArray('seen');
+    let seenIds = this.get('cookieStore').getArray('seenCutieIds');
     return this.store.findAll('cutie').then(cuties => {
       return cuties.reject(cutie => seenIds.includes(cutie.get('id').toString()));
     });

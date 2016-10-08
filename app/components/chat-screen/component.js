@@ -5,14 +5,18 @@ export default Ember.Component.extend({
   classNames: ['chat-screen'],
 
   store: Ember.inject.service(),
+  cookieStore: Ember.inject.service(),
 
   didReceiveAttrs() {
     this._super(...arguments);
-    this.set('seenMessageIds', [1]);
     this.get('store').query('message', {
       cutieId: this.get('cutie.id')
     }).then(messages => {this.set('messages', messages);});
   },
+
+  seenMessageIds: Ember.computed('cutie', function() {
+    return this.get('cookieStore').getSeenMessageIds(this.get('cutie.id'));
+  }),
 
   seenMessages: Ember.computed('messages', 'seenMessageIds.[]', function() {
     return (this.get('messages') || []).filter(message => {
@@ -20,7 +24,7 @@ export default Ember.Component.extend({
     });
   }),
 
-  nextMessageId: Ember.computed('seenMessages.@each', function() {
+  nextMessageId: Ember.computed('seenMessages.@each', 'cutie', function() {
     return this.get('seenMessages.lastObject.goTo');
   }),
 
@@ -34,6 +38,10 @@ export default Ember.Component.extend({
 
   disableSendButton: Ember.computed.bool('nextMessage.incoming'),
 
+  typingMessage: Ember.computed('nextMessage.incoming', function() {
+    return {incoming: this.get('nextMessage.incoming'), content: '...'};
+  }),
+
   actions: {
     sendNextMessage() {
       this.readNext();
@@ -41,12 +49,20 @@ export default Ember.Component.extend({
   },
 
   readNext() {
-    this.get('seenMessageIds').pushObject(this.get('nextMessageId'));
-    this.receiveIncomingMessages();
+    this.set('typing', true);
+    sleep(1000).then(() => {
+      this.set('typing', false);
+      this.get('cookieStore').pushSeenMessageId(
+        this.get('cutie.id'), this.get('nextMessageId')
+      ); // needs to happen first
+      this.get('seenMessageIds').pushObject(this.get('nextMessageId'));
+      this.receiveIncomingMessages();
+    });
   },
 
   receiveIncomingMessages() {
-    if (this.get('nextMessage.incoming')) {
+    let isIncoming = this.get('nextMessage.incoming');
+    if (isIncoming) {
       sleep(this.get('nextMessage.sleepTime')).then(() => {
         this.readNext();
       });

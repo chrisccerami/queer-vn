@@ -7,6 +7,22 @@ export default Ember.Service.extend({
     this.writeToStructure([], key, element);
   },
 
+  pushSeenMessageId(cutieId, messageId) {
+    let cookieService = this.get('cookieService');
+    let seenMessageIds = this.objectify(cookieService.read('seenMessageIds'));
+    if (seenMessageIds[cutieId.toString()]) {
+      seenMessageIds[cutieId.toString()].push(messageId)
+    } else {
+      seenMessageIds[cutieId.toString()] = [1, messageId];
+    }
+    this.get('cookieService').write('seenMessageIds', JSON.stringify(seenMessageIds));
+  },
+
+  getSeenMessageIds(cutieId) {
+    let seenMessageIds = this.getObjectValue('seenMessageIds', cutieId) || [1];
+    return seenMessageIds;
+  },
+
   writeKeyValue(key, objectKey, objectValue) {
     this.writeToStructure({}, key, objectKey, objectValue);
   },
