@@ -3,7 +3,7 @@ import Ember from 'ember';
 export default Ember.Controller.extend({
   cookieStore: Ember.inject.service(),
 
-  currentCutie: Ember.computed('model.@each', function() {
+  currentCutie: Ember.computed('model.[]', function() {
     return this.get('model.firstObject');
   }),
 
@@ -18,6 +18,11 @@ export default Ember.Controller.extend({
       cookies.push('seen', cutie.id);
       cookies.push('liked', cutie.id);
       this.get('model').removeObject(cutie);
+    },
+
+    clearSave() {
+      this.get('cookieStore').clearAll();
+      window.location.reload();
     }
   }
 });
