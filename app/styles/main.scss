@@ -8,7 +8,17 @@ body {
 #header {
   background-color: #40E0D0;
   color: #8A2BE2;
-  font-size: 48px;
-  font-weight: bold;
-  text-align: center;
+
+  .title {
+    font-size: 48px;
+    font-weight: bold;
+    display: inline;
+    padding: 20px;
+  }
+
+  .links {
+    float: right;
+    display: inline;
+    padding: 20px;
+  }
 }

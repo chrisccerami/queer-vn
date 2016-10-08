@@ -7,7 +7,7 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.route('cuties');
+  this.route('cuties', {path: '/'});
   this.route('likes');
 });
 
