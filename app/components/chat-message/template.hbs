@@ -1,3 +1,7 @@
 <div class={{incomingClass}}>
-  <div class="content">{{message.content}}</div>
+  {{#if typing}}
+    <div class="content">...</div>
+  {{else}}
+    <div class="content">{{message.content}}</div>
+  {{/if}}
 </div>

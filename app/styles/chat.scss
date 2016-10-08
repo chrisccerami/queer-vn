@@ -1,6 +1,9 @@
 .chat-screen {
   width: 99%;
-  max-height: calc(100vh - 10%);
+  max-height: calc(80vh - 10%);
+
+  .send-button {
+  }
 }
 
 .chat-message {

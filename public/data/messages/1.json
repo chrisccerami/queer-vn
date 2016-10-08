@@ -2,15 +2,28 @@
   "messages": [
     {
       "id": 1, "incoming": true,
-      "content": "Hey there!"
+      "content": "Hey there!",
+      "goTo": 2
     },
     {
       "id": 2, "incoming": false,
-      "content": "Yo"
+      "content": "Yo",
+      "goTo": 3
     },
     {
       "id": 3, "incoming": true,
-      "content": "What's up?"
+      "content": "What's up?",
+      "goTo": 4, "sleepTime": 1000
+    },
+    {
+      "id": 4, "incoming": true,
+      "content": "Are you there?",
+      "goTo": 5, "sleepTime": 4000
+    },
+    {
+      "id": 5, "incoming": false,
+      "content": "Yeah, sorry. I'm here, what's up?",
+      "goTo": 0
     }
   ]
 }
