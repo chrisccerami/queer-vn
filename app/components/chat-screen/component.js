@@ -12,6 +12,7 @@ export default Ember.Component.extend({
     this.get('store').query('message', {
       cutieId: this.get('cutie.id')
     }).then(messages => {this.set('messages', messages);});
+    this.receiveIncomingMessages();
   },
 
   seenMessageIds: Ember.computed('cutie', function() {
@@ -63,7 +64,12 @@ export default Ember.Component.extend({
   receiveIncomingMessages() {
     let isIncoming = this.get('nextMessage.incoming');
     if (isIncoming) {
+      this.set('currentCutieId', this.get('cutie.id'));
       sleep(this.get('nextMessage.sleepTime')).then(() => {
+        let currentCutieId = this.get('currentCutieId');
+        if (currentCutieId && (this.get('cutie.id') !== currentCutieId)) {
+          return;
+        }
         this.readNext();
       });
     }
