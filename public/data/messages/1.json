@@ -2,28 +2,237 @@
   "messages": [
     {
       "id": 1, "incoming": true,
-      "content": "Hey there!",
+      "content": "Hey! So you're a programmer, huh? That's so cool! How do you like it?",
       "goTo": 2
     },
     {
       "id": 2, "incoming": false,
-      "content": "Yo",
+      "content": "Hi! Yeah, I love it. I've been doing it for about a year now. How about you? Do you like journalism?",
       "goTo": 3
     },
     {
       "id": 3, "incoming": true,
-      "content": "What's up?",
+      "content": "I really do. I write for a local news site, and it's an amazing job.",
       "goTo": 4, "sleepTime": 1000
     },
     {
-      "id": 4, "incoming": true,
-      "content": "Are you there?",
-      "goTo": 5, "sleepTime": 4000
+      "id": 4, "incoming": false,
+      "content": "That's so cool. I'm glad you enjoy what you do. I think that's important.",
+      "goTo": 5, "sleepTime": 1000
     },
     {
       "id": 5, "incoming": false,
-      "content": "Yeah, sorry. I'm here, what's up?",
-      "goTo": 0
+      "content": "lol so your profile says no man buns. What's the deal with that?",
+      "goTo": 6
+    },
+    {
+      "id": 6, "incoming": true,
+      "content": "Haha omg, why, you don't have one do you?",
+      "goTo": 7, "sleepTime": 1000
+    },
+    {
+      "id": 7, "incoming": false,
+      "content": "No, just curious why you put it lol",
+      "goTo": 8
+    },
+    {
+      "id": 8, "incoming": true,
+      "content": "Haha cuz they're so ridiculous! Like, I could not take a guy seriously who has a man bun",
+      "goTo": 9, "sleepTime": 1000
+    },
+    {
+      "id": 9, "incoming": true,
+      "content": "I'm into more manly guys.",
+      "goTo": 10, "sleepTime": 1000
+    },
+    {
+      "id": 10, "incoming": false,
+      "content": "I see. What's your definition of manly?",
+      "goTo": 11
+    },
+    {
+      "id": 11, "incoming": true,
+      "content": "Hm, let's see...",
+      "goTo": 12, "sleepTime": 1000
+    },
+    {
+      "id": 12, "incoming": true,
+      "content": "I like a man who can take care of his woman, who has some good facial hair, who dresses well. You know, things like that.",
+      "goTo": 13, "sleepTime": 1000
+    },
+    {
+      "id": 13, "incoming": true,
+      "content": "What's your definition of ladylike?",
+      "goTo": 14, "sleepTime": 1000
+    },
+    {
+      "id": 14, "incoming": false,
+      "content": "Haha I don't know, I don't really have one. I'm into all different kinds of people.",
+      "goTo": 15
+    },
+    {
+      "id": 15, "incoming": true,
+      "content": "Wait, you're originally from New Jersey? omg you're not a Giants fan are you?",
+      "goTo": 16
+    },
+    {
+      "id": 16, "incoming": false,
+      "content": "No haha, why?",
+      "goTo": 17
+    },
+    {
+      "id": 17, "incoming": true,
+      "content": "I just have to make sure lol. that's very important. I loooove my patriots!",
+      "goTo": 18
+    },
+    {
+      "id": 18, "incoming": false,
+      "content": "yeah it seems like most people around here feel that way",
+      "goTo": 19
+    },
+    {
+      "id": 19, "incoming": true,
+      "content": "are you not a patriots fan?",
+      "goTo": 20
+    },
+    {
+      "id": 20, "incoming": false,
+      "content": "Nah, I'm not into football",
+      "goTo": 21
+    },
+    {
+      "id": 21, "incoming": true,
+      "content": "whaaaat?? how can you not like football? what sports do you like then?",
+      "goTo": 22
+    },
+    {
+      "id": 22, "incoming": false,
+      "content": "I've never really been into sports. I don't know why, they've just never interested me much. I do like being outside though, hiking, camping, stuff like that",
+      "goTo": 23
+    },
+    {
+      "id": 23, "incoming": true, "goTo": 24,
+      "content": "ooo I love hiking too. do you like kayaking?"
+    },
+    {
+      "id": 24, "incoming": false, "goTo": 25,
+      "content": "I love kayaking! I went recently on Cape Cod and it was so fun!"
+    },
+    {
+      "id": 25, "incoming": true, "goTo": 26,
+      "content": "Would you want to go this weekend? I know this great spot for it"
+    },
+    {
+      "id": 26, "incoming": false, "goTo": 27,
+      "content": "For sure! That sounds super fun"
+    },
+    {
+      "id": 27, "incoming": true, "goTo": 28,
+      "content": "Great! I'll hit you up soon"
+    },
+    {
+      "id": 28, "incoming": false, "goTo": 29,
+      "content": "Hey, how's it going?"
+    },
+    {
+      "id": 29, "incoming": true, "goTo": 30,
+      "content": "Ugh, it's going. Been a long couple of days."
+    },
+    {
+      "id": 30, "incoming": false, "goTo": 31,
+      "content": "Oh, I'm sorry to hear that. Work stuff?"
+    },
+    {
+      "id": 31, "incoming": true, "goTo": 32,
+      "content": "Nah, I've had to deal with my ex, getting back stuff from his apartment and whatnot"
+    },
+    {
+      "id": 32, "incoming": false, "goTo": 33,
+      "content": "ah, I can imagine that's rough"
+    },
+    {
+      "id": 33, "incoming": true, "goTo": 34,
+      "content": "Yeah, he's a dick haha. What about you? Any crazy exes?"
+    },
+    {
+      "id": 34, "incoming": false, "goTo": 35,
+      "content": "Hm, not really. I tend to get along with most of exes. I haven't had many bad breakups."
+    },
+    {
+      "id": 35, "incoming": true, "goTo": 36,
+      "content": "Well, that's a good sign! When was your last relationship?"
+    },
+    {
+      "id": 36, "incoming": false, "goTo": 37,
+      "content": "I think my last partner and I broke up around 6 months ago? Something like that."
+    },
+    {
+      "id": 37, "incoming": true, "goTo": 38,
+      "content": "And you still talk to her?"
+    },
+    {
+      "id": 38, "incoming": false, "goTo": 40,
+      "content": "him, and yeah, we still talk"
+    },
+    {
+      "id": 40, "incoming": true, "goTo": 41,
+      "content": "what do you mean him?"
+    },
+    {
+      "id": 41, "incoming": false, "goTo": 42,
+      "content": "Oh, I mean my last partner was a man, not a woman"
+    },
+    {
+      "id": 42, "incoming": true, "goTo": 43,
+      "content": "wait....you're gay???"
+    },
+    {
+      "id": 43, "incoming": false, "goTo": 44,
+      "content": "no, I date women as well"
+    },
+    {
+      "id": 44, "incoming": true, "goTo": 45,
+      "content": "but you also like guys?"
+    },
+    {
+      "id": 45, "incoming": false, "goTo": 46,
+      "content": "yeah"
+    },
+    {
+      "id": 46, "incoming": true, "goTo": 47,
+      "content": "I see"
+    },
+    {
+      "id": 47, "incoming": false, "goTo": 48,
+      "content": "is that a problem...?"
+    },
+    {
+      "id": 48, "incoming": true, "goTo": 49,
+      "content": "No! I mean, I have NO problem with gay people at all!"
+    },
+    {
+      "id": 49, "incoming": false, "goTo": 50,
+      "content": "Well, I'm not gay. Like I said, I date women as well as men."
+    },
+    {
+      "id": 50, "incoming": true, "goTo": 51,
+      "content": "Right. and that's totally totally cool. "
+    },
+    {
+      "id": 51, "incoming": false, "goTo": 52,
+      "content": "cool, that's a relief. i'm glad you're cool with it."
+    },
+    {
+      "id": 52, "incoming": true, "goTo": 53,
+      "content": "totally"
+    },
+    {
+      "id": 53, "incoming": false, "goTo": 54,
+      "content": "So where is this place you want to go kayaking this weekend?"
+    },
+    {
+      "id": 54, "incoming": false, "goTo": 55,
+      "content": "Hey, just wanted to check if we were still down for this weekend?"
     }
   ]
 }

@@ -1,8 +1,15 @@
 .chat-screen {
   width: 99%;
-  max-height: calc(80vh - 10%);
 
   .send-button {
+  }
+
+  .messages {
+    height: 80vh;
+    overflow-y: scroll;
+    border: 1px #8A2BE2 solid;
+    background-color: #fff;
+    max-height: calc(80vh - 10%);
   }
 }
 

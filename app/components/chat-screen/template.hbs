@@ -4,9 +4,11 @@
   </button>
 </div>
 
-{{#each seenMessages as |message|}}
-  {{chat-message message=message cutie=cutie}}
-{{/each}}
-{{#if typing}}
-  {{chat-message message=typingMessage}}
-{{/if}}
+<div class="messages">
+  {{#each seenMessages as |message|}}
+    {{chat-message message=message cutie=cutie}}
+  {{/each}}
+  {{#if typing}}
+    {{chat-message message=typingMessage}}
+  {{/if}}
+</div>

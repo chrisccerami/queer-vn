@@ -7,6 +7,10 @@ export default Ember.Controller.extend({
     return this.get('model.firstObject');
   }),
 
+  descriptionHtml: Ember.computed('currentCutie.description', function() {
+    return new Ember.String.htmlSafe(this.get('currentCutie.description').replace(/\n/g, '<br>'));
+  }),
+
   actions: {
     rejectCutie(cutie) {
       this.get('cookieStore').push('seenCutieIds', cutie.id);

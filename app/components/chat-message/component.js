@@ -1,5 +1,4 @@
 import Ember from 'ember';
-import sleep from './../../utils/sleep';
 
 export default Ember.Component.extend({
   classNames: ['chat-message'],

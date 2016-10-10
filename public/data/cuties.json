@@ -2,17 +2,17 @@
   "cuties": [
     {
       "id": 1,
+      "firstName": "Marie",
+      "lastName": "Walsh",
+      "age": 27,
+      "description": "Journalist. U smart? Get at me.\n\nTravel\nCats\nBeer\nStreet Art\nNew food\n***No Man Buns***"
+    },
+    {
+      "id": 2,
       "firstName": "Lee",
       "lastName": "Détroit",
       "age": 22,
       "description": "Adorable Montreal native, art student"
-    },
-    {
-      "id": 2,
-      "firstName": "Fran",
-      "lastName": "",
-      "age": 25,
-      "description": "Drag king, bard, mystery"
     }
   ]
 }

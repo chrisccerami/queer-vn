@@ -15,6 +15,10 @@ export default Ember.Component.extend({
     this.receiveIncomingMessages();
   },
 
+  didRender() {
+    this.scrollChatToBottom();
+  },
+
   seenMessageIds: Ember.computed('cutie', function() {
     return this.get('cookieStore').getSeenMessageIds(this.get('cutie.id'));
   }),
@@ -57,6 +61,7 @@ export default Ember.Component.extend({
         this.get('cutie.id'), this.get('nextMessageId')
       ); // needs to happen first
       this.get('seenMessageIds').pushObject(this.get('nextMessageId'));
+      this.scrollChatToBottom();
       this.receiveIncomingMessages();
     });
   },
@@ -73,5 +78,10 @@ export default Ember.Component.extend({
         this.readNext();
       });
     }
+  },
+
+  scrollChatToBottom() {
+    let element = Ember.$('.chat-screen .messages');
+    element.scrollTop(element.prop("scrollHeight"));
   }
 });

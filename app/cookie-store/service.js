@@ -11,7 +11,7 @@ export default Ember.Service.extend({
     let cookieService = this.get('cookieService');
     let seenMessageIds = this.objectify(cookieService.read('seenMessageIds'));
     if (seenMessageIds[cutieId.toString()]) {
-      seenMessageIds[cutieId.toString()].push(messageId)
+      seenMessageIds[cutieId.toString()].push(messageId);
     } else {
       seenMessageIds[cutieId.toString()] = [1, messageId];
     }
