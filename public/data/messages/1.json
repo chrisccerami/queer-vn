@@ -13,12 +13,12 @@
     {
       "id": 3, "incoming": true,
       "content": "I really do. I write for a local news site, and it's an amazing job.",
-      "goTo": 4, "sleepTime": 1000
+      "goTo": 4, "sleepTime": 2000
     },
     {
       "id": 4, "incoming": false,
       "content": "That's so cool. I'm glad you enjoy what you do. I think that's important.",
-      "goTo": 5, "sleepTime": 1000
+      "goTo": 5
     },
     {
       "id": 5, "incoming": false,
@@ -28,7 +28,7 @@
     {
       "id": 6, "incoming": true,
       "content": "Haha omg, why, you don't have one do you?",
-      "goTo": 7, "sleepTime": 1000
+      "goTo": 7, "sleepTime": 2000
     },
     {
       "id": 7, "incoming": false,
@@ -38,7 +38,7 @@
     {
       "id": 8, "incoming": true,
       "content": "Haha cuz they're so ridiculous! Like, I could not take a guy seriously who has a man bun",
-      "goTo": 9, "sleepTime": 1000
+      "goTo": 9, "sleepTime": 2000
     },
     {
       "id": 9, "incoming": true,
@@ -53,12 +53,12 @@
     {
       "id": 11, "incoming": true,
       "content": "Hm, let's see...",
-      "goTo": 12, "sleepTime": 1000
+      "goTo": 12, "sleepTime": 2000
     },
     {
       "id": 12, "incoming": true,
       "content": "I like a man who can take care of his woman, who has some good facial hair, who dresses well. You know, things like that.",
-      "goTo": 13, "sleepTime": 1000
+      "goTo": 13, "sleepTime": 3000
     },
     {
       "id": 13, "incoming": true,
@@ -73,7 +73,7 @@
     {
       "id": 15, "incoming": true,
       "content": "Wait, you're originally from New Jersey? omg you're not a Giants fan are you?",
-      "goTo": 16
+      "goTo": 16, "sleepTime": 2000
     },
     {
       "id": 16, "incoming": false,
@@ -83,7 +83,7 @@
     {
       "id": 17, "incoming": true,
       "content": "I just have to make sure lol. that's very important. I loooove my patriots!",
-      "goTo": 18
+      "goTo": 18, "sleepTime": 2000
     },
     {
       "id": 18, "incoming": false,
@@ -93,7 +93,7 @@
     {
       "id": 19, "incoming": true,
       "content": "are you not a patriots fan?",
-      "goTo": 20
+      "goTo": 20, "sleepTime": 3000
     },
     {
       "id": 20, "incoming": false,
@@ -103,7 +103,7 @@
     {
       "id": 21, "incoming": true,
       "content": "whaaaat?? how can you not like football? what sports do you like then?",
-      "goTo": 22
+      "goTo": 22, "sleepTime": 2000
     },
     {
       "id": 22, "incoming": false,
@@ -111,7 +111,7 @@
       "goTo": 23
     },
     {
-      "id": 23, "incoming": true, "goTo": 24,
+      "id": 23, "incoming": true, "goTo": 24, "sleepTime": 2000,
       "content": "ooo I love hiking too. do you like kayaking?"
     },
     {
@@ -119,7 +119,7 @@
       "content": "I love kayaking! I went recently on Cape Cod and it was so fun!"
     },
     {
-      "id": 25, "incoming": true, "goTo": 26,
+      "id": 25, "incoming": true, "goTo": 26, "sleepTime": 2000,
       "content": "Would you want to go this weekend? I know this great spot for it"
     },
     {
@@ -127,7 +127,7 @@
       "content": "For sure! That sounds super fun"
     },
     {
-      "id": 27, "incoming": true, "goTo": 28,
+      "id": 27, "incoming": true, "goTo": 28, "sleepTime": 2000,
       "content": "Great! I'll hit you up soon"
     },
     {
@@ -135,7 +135,7 @@
       "content": "Hey, how's it going?"
     },
     {
-      "id": 29, "incoming": true, "goTo": 30,
+      "id": 29, "incoming": true, "goTo": 30, "sleepTime": 4000,
       "content": "Ugh, it's going. Been a long couple of days."
     },
     {
@@ -143,7 +143,7 @@
       "content": "Oh, I'm sorry to hear that. Work stuff?"
     },
     {
-      "id": 31, "incoming": true, "goTo": 32,
+      "id": 31, "incoming": true, "goTo": 32, "sleepTime": 3000,
       "content": "Nah, I've had to deal with my ex, getting back stuff from his apartment and whatnot"
     },
     {
@@ -151,7 +151,7 @@
       "content": "ah, I can imagine that's rough"
     },
     {
-      "id": 33, "incoming": true, "goTo": 34,
+      "id": 33, "incoming": true, "goTo": 34, "sleepTime": 2000,
       "content": "Yeah, he's a dick haha. What about you? Any crazy exes?"
     },
     {
@@ -159,7 +159,7 @@
       "content": "Hm, not really. I tend to get along with most of exes. I haven't had many bad breakups."
     },
     {
-      "id": 35, "incoming": true, "goTo": 36,
+      "id": 35, "incoming": true, "goTo": 36, "sleepTime": 2000,
       "content": "Well, that's a good sign! When was your last relationship?"
     },
     {
@@ -167,7 +167,7 @@
       "content": "I think my last partner and I broke up around 6 months ago? Something like that."
     },
     {
-      "id": 37, "incoming": true, "goTo": 38,
+      "id": 37, "incoming": true, "goTo": 38, "sleepTime": 2000,
       "content": "And you still talk to her?"
     },
     {
@@ -175,7 +175,7 @@
       "content": "him, and yeah, we still talk"
     },
     {
-      "id": 40, "incoming": true, "goTo": 41,
+      "id": 40, "incoming": true, "goTo": 41, "sleepTime": 5000,
       "content": "what do you mean him?"
     },
     {
@@ -183,7 +183,7 @@
       "content": "Oh, I mean my last partner was a man, not a woman"
     },
     {
-      "id": 42, "incoming": true, "goTo": 43,
+      "id": 42, "incoming": true, "goTo": 43, "sleepTime": 4000,
       "content": "wait....you're gay???"
     },
     {
@@ -191,7 +191,7 @@
       "content": "no, I date women as well"
     },
     {
-      "id": 44, "incoming": true, "goTo": 45,
+      "id": 44, "incoming": true, "goTo": 45, "sleepTime": 3000,
       "content": "but you also like guys?"
     },
     {
@@ -199,7 +199,7 @@
       "content": "yeah"
     },
     {
-      "id": 46, "incoming": true, "goTo": 47,
+      "id": 46, "incoming": true, "goTo": 47, "sleepTime": 5000,
       "content": "I see"
     },
     {
@@ -207,7 +207,7 @@
       "content": "is that a problem...?"
     },
     {
-      "id": 48, "incoming": true, "goTo": 49,
+      "id": 48, "incoming": true, "goTo": 49, "sleepTime": 1000,
       "content": "No! I mean, I have NO problem with gay people at all!"
     },
     {
@@ -215,7 +215,7 @@
       "content": "Well, I'm not gay. Like I said, I date women as well as men."
     },
     {
-      "id": 50, "incoming": true, "goTo": 51,
+      "id": 50, "incoming": true, "goTo": 51, "sleepTime": 3000,
       "content": "Right. and that's totally totally cool. "
     },
     {
@@ -223,7 +223,7 @@
       "content": "cool, that's a relief. i'm glad you're cool with it."
     },
     {
-      "id": 52, "incoming": true, "goTo": 53,
+      "id": 52, "incoming": true, "goTo": 53, "sleepTime": 3000,
       "content": "totally"
     },
     {
