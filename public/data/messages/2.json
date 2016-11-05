@@ -1,16 +1,156 @@
 {
   "messages": [
     {
-      "id": 1, "incoming": true,
+      "id": 1, "incoming": true, "goTo": 2,
+      "content": "heyyyyy"
+    },
+    {
+      "id": 2, "incoming": false, "goTo": 3,
       "content": "Hey there!"
     },
     {
-      "id": 2, "incoming": false,
-      "content": "Yo"
+      "id": 3, "incoming": true, "goTo": 4, "sleepTime": 2000,
+      "content": "what's up?"
     },
     {
-      "id": 3, "incoming": true,
-      "content": "What's up?"
+      "id": 4, "incoming": false, "goTo": 5,
+      "content": "Caught in another X-Files binge. A magician just decapitated himself."
+    },
+    {
+      "id": 5, "incoming": true, "goTo": 6, "sleepTime": 3000,
+      "content": "damn 😆 like, by accident?"
+    },
+    {
+      "id": 6, "incoming": false, "goTo": 7,
+      "content": "Maybe?"
+    },
+    {
+      "id": 7, "incoming": false, "goTo": 8,
+      "content": "Or maybe it was part of a magic trick?"
+    },
+    {
+      "id": 8, "incoming": false, "goTo": 9,
+      "content": "It's not really clear yet, and I forget how this episode ends."
+    },
+    {
+      "id": 9, "incoming": true, "goTo": 10, "sleepTime": 2000,
+      "content": "well that would be a damn impressive trick 🎩 🐰"
+    },
+    {
+      "id": 10, "incoming": false, "goTo": 11,
+      "content": "Nah, are you saying you can't pull your own head off?"
+    },
+    {
+      "id": 11, "incoming": true, "goTo": 12, "sleepTime": 3000,
+      "content": "well, that's a little personal for this point in our relationship, don't you think? 😂 🍆"
+    },
+    {
+      "id": 12, "incoming": false, "goTo": 13,
+      "content": "Haha fuck. Whoops. Anywayyyy, what are you up to?"
+    },
+    {
+      "id": 13, "incoming": true, "goTo": 14, "sleepTime": 2000,
+      "content": "ugh just arguing with this friend of mine. he's being such a faggot."
+    },
+    {
+      "id": 14, "incoming": false, "goTo": 15,
+      "content": "uhhhh..."
+    },
+    {
+      "id": 15, "incoming": true, "goTo": 16, "sleepTime": 1000,
+      "content": "we were supposed to go out tonight, but he wants to stay home and do homeowrk instead"
+    },
+    {
+      "id": 16, "incoming": true, "goTo": 17, "sleepTime": 2000,
+      "content": "but i guess it led to you and I talking, huh? 😉"
+    },
+    {
+      "id": 17, "incoming": false, "goTo": 18,
+      "content": "Well, I'm sorry you won't get to go out."
+    },
+    {
+      "id": 18, "incoming": true, "goTo": 19, "sleepTime": 2000,
+      "content": "oh i'm sure we still will 😂"
+    },
+    {
+      "id": 19, "incoming": true, "goTo": 20, "sleepTime": 1000,
+      "content": "i usually get my way"
+    },
+    {
+      "id": 20, "incoming": false, "goTo": 21,
+      "content": "lol well then I hope you have fun. Where are you going?"
+    },
+    {
+      "id": 21, "incoming": true, "goTo": 22, "sleepTime": 2000,
+      "content": "why, you comin out? you wanna stalk me? 😜"
+    },
+    {
+      "id": 22, "incoming": false, "goTo": 23,
+      "content": "Nooo haha I'm hanging with a few friends tonight. Just curious."
+    },
+    {
+      "id": 23, "incoming": true, "goTo": 24, "sleepTime": 2000,
+      "content": "awwww boringgggg. well, I think we're going to a gay club near here."
+    },
+    {
+      "id": 24, "incoming": false, "goTo": 25,
+      "content": "Sounds like it should be fun. Did your friend agree to go with?"
+    },
+    {
+      "id": 25, "incoming": true, "goTo": 26, "sleepTime": 3000,
+      "content": "yassss. we gotta wingman for each other!"
+    },
+    {
+      "id": 26, "incoming": false, "goTo": 27,
+      "content": "That's a valuable skill to have. Can't overestimate the value of a good wingman."
+    },
+    {
+      "id": 27, "incoming": true, "goTo": 28, "sleepTime": 2000,
+      "content": "you're not jealous right? 😈 what if i dance with some cute little fags?"
+    },
+    {
+      "id": 28, "incoming": false, "goTo": 29,
+      "content": "No, I'm not jealous, but can you please stop using that word?"
+    },
+    {
+      "id": 29, "incoming": true, "goTo": 30, "sleepTime": 3000,
+      "content": "...you mean faggot?"
+    },
+    {
+      "id": 30, "incoming": false, "goTo": 31,
+      "content": "Yeah"
+    },
+    {
+      "id": 31, "incoming": true, "goTo": 32, "sleepTime": 3000,
+      "content": "wtf"
+    },
+    {
+      "id": 32, "incoming": true, "goTo": 33, "sleepTime": 1000,
+      "content": "how dare you"
+    },
+    {
+      "id": 33, "incoming": true, "goTo": 34, "sleepTime": 1000,
+      "content": "how fucking dare you??"
+    },
+    {
+      "id": 34, "incoming": true, "goTo": 35, "sleepTime": 2000,
+      "content": "that is our word, and i will fucking use it as much as i want"
+    },
+    {
+      "id": 35, "incoming": true, "goTo": 36, "sleepTime": 1500,
+      "content": "for real, fuck you"
+    },
+    {
+      "id": 36, "incoming": true, "goTo": 37, "sleepTime": 2200,
+      "content": "just because i'm gay doesn't mean i'm some sjw faggot"
+    },
+    {
+      "id": 37, "incoming": true, "goTo": 38, "sleepTime": 3500,
+      "content": "i can't even fucking believe you would try to censor me wuthout even knowing me"
+    },
+    {
+      "id": 38, "incoming": true, "goTo": 39, "sleepTime": 2000,
+      "content": "fuck off"
     }
   ]
 }
