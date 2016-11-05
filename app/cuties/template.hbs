@@ -1,23 +1,31 @@
 <div id="cuties">
-  <div class="current">
-    <div class="profile-left">
-      <img src="{{currentCutie.photoFilename}}" alt={{currentCutie.name}}/>
-    </div>
-    <div class="profile-right">
-      <div class="info">
-        <div class="name">
-          {{currentCutie.firstName}}, {{currentCutie.age}}
+  {{#if currentCutie}}
+    <div class="current">
+      <div class="profile-left">
+        <img src="{{currentCutie.photoFilename}}" alt={{currentCutie.name}}/>
+      </div>
+      <div class="profile-right">
+        <div class="info">
+          <div class="name">
+            {{currentCutie.firstName}}, {{currentCutie.age}}
+          </div>
+          <p class="description">
+            {{descriptionHtml}}
+          </p>
         </div>
-        <p class="description">
-          {{descriptionHtml}}
-        </p>
-      </div>
 
-      <div class="hi-or-bi">
-        <button {{action "rejectCutie" currentCutie}} class="reject-button">Bi</button>
-        <button {{action "likeCutie" currentCutie}} class="like-button">Hi</button>
+        <div class="hi-or-bi">
+          <button {{action "rejectCutie" currentCutie}} class="reject-button">Bi</button>
+          <button {{action "likeCutie" currentCutie}} class="like-button">Hi</button>
+        </div>
       </div>
     </div>
-  </div>
+  {{else}}
+    <div class="none">
+      <p>
+        We don't have any more cuties for you right now. Go chat with some of the people you've matched with!
+      </p>
+    </div>
+  {{/if}}
 </div>
 <button {{action "clearSave"}}>Clear Save</button>
