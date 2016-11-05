@@ -1,14 +1,15 @@
-<div class="send-button">
-  <button {{action "sendNextMessage"}} disabled={{disableSendButton}}>
-    Send
-  </button>
-</div>
-
 <div class="messages">
   {{#each seenMessages as |message|}}
     {{chat-message message=message cutie=cutie}}
   {{/each}}
   {{#if typing}}
     {{chat-message message=typingMessage}}
+  {{/if}}
+  {{#if displayChoice}}
+    <div class="chat-message">
+      <div class="choose-outgoing" {{action "sendNextMessage"}}>
+        <div class="content">{{nextMessage.content}}</div>
+      </div>
+    </div>
   {{/if}}
 </div>

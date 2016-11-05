@@ -14,7 +14,7 @@
 }
 
 .chat-message {
-  width: 100%;
+  width: 99%;
   margin: 5px;
 
   .content {
@@ -36,6 +36,15 @@
 
     .content {
       background-color: #C9FAFC;
+    }
+  }
+
+  .choose-outgoing {
+    text-align: right;
+
+    .content {
+      background-color: #C9FAFC;
+      border: 2px dashed #8A2BE2;
     }
   }
 }
