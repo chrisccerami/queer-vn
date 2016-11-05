@@ -8,7 +8,8 @@ export default Ember.Controller.extend({
   }),
 
   descriptionHtml: Ember.computed('currentCutie.description', function() {
-    return new Ember.String.htmlSafe(this.get('currentCutie.description').replace(/\n/g, '<br>'));
+    let description = this.get('currentCutie.description') || "";
+    return new Ember.String.htmlSafe(description.replace(/\n/g, '<br>'));
   }),
 
   actions: {
