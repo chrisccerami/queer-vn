@@ -33,7 +33,7 @@ export default Ember.Component.extend({
     return this.get('seenMessages.lastObject.goTo');
   }),
 
-  nextMessage: Ember.computed('nextMessageId', function() {
+  nextMessage: Ember.computed('messages', 'nextMessageId', function() {
     if (this.get('messages')) {
       return this.get('messages').findBy('id', this.get('nextMessageId').toString());
     } else {
@@ -41,10 +41,12 @@ export default Ember.Component.extend({
     }
   }),
 
-  disableSendButton: Ember.computed.bool('nextMessage.incoming'),
-
   typingMessage: Ember.computed('nextMessage.incoming', function() {
     return {incoming: this.get('nextMessage.incoming'), content: '...'};
+  }),
+
+  displayChoice: Ember.computed('nextMessage.outgoing', 'typing', function() {
+    return this.get('nextMessage.outgoing') && !this.get('typing');
   }),
 
   actions: {
