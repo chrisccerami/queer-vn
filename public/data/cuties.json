@@ -5,6 +5,7 @@
       "firstName": "Marie",
       "lastName": "Walsh",
       "age": 27,
+      "photoFilename": "placeholder.png",
       "description": "Journalist. U smart? Get at me.\n\nTravel\nCats\nBeer\nStreet Art\nNew food\n***No Man Buns***"
     },
     {
@@ -12,6 +13,7 @@
       "firstName": "Jason",
       "lastName": "Schmidt",
       "age": 22,
+      "photoFilename": "placeholder.png",
       "description": "Looking for the Ken to my Ken"
     }
   ]
