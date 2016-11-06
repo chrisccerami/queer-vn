@@ -15,6 +15,14 @@
       "age": 22,
       "photoFilename": "http://s3.amazonaws.com/queer-vn/images/placeholder.png",
       "description": "Looking for the Ken to my Ken"
+    },
+    {
+      "id": 3,
+      "firstName": "Will",
+      "lastName": "Reese",
+      "age": 29,
+      "photoFilename": "http://s3.amazonaws.com/queer-vn/images/placeholder.png",
+      "description": ""
     }
   ]
 }
