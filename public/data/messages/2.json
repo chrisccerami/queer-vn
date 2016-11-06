@@ -142,7 +142,7 @@
     },
     {
       "id": 36, "incoming": true, "goTo": 37, "sleepTime": 2200,
-      "content": "just because i'm gay doesn't mean i'm some sjw faggot"
+      "content": "just because i'm gay doesn't mean i'm some fucking sjw"
     },
     {
       "id": 37, "incoming": true, "goTo": 38, "sleepTime": 3500,
@@ -151,6 +151,18 @@
     {
       "id": 38, "incoming": true, "goTo": 39, "sleepTime": 2000,
       "content": "fuck off"
+    },
+    {
+      "id": 39, "incoming": false, "goTo": 40,
+      "content": "Woah, I'm not censoring you. I'm just asking you if you can not use a word that makes me really uncomfortable."
+    },
+    {
+      "id": 40, "incoming": true, "goTo": 41, "sleepTime": 2000,
+      "content": "fuck you. that's what censorship is"
+    },
+    {
+      "id": 41, "incoming": true, "goTo": 42, "sleepTime": 1000,
+      "content": "stfu"
     }
   ]
 }

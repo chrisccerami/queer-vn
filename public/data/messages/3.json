@@ -1,0 +1,212 @@
+{
+  "messages": [
+    {
+      "id": 1, "incoming": true, "goTo": 2,
+      "content": "Hey, you gay?"
+    },
+    {
+      "id": 2, "incoming": false, "goTo": 3,
+      "content": "uh hi. no, why?"
+    },
+    {
+      "id": 3, "incoming": true, "goTo": 4, "sleepTime": 2000,
+      "content": "You straight? Why are you on here then?"
+    },
+    {
+      "id": 4, "incoming": false, "goTo": 5,
+      "content": "No, I'm queer, just not gay."
+    },
+    {
+      "id": 5, "incoming": true, "goTo": 6, "sleepTime": 2000,
+      "content": "Oh, got it."
+    },
+    {
+      "id": 6, "incoming": true, "goTo": 7, "sleepTime": 4000,
+      "content": "So you like guys right?"
+    },
+    {
+      "id": 7, "incoming": false, "goTo": 8,
+      "content": "yeah...why?"
+    },
+    {
+      "id": 8, "incoming": true, "goTo": 9, "sleepTime": 1000,
+      "content": "Oh, just checking."
+    },
+    {
+      "id": 9, "incoming": true, "goTo": 10, "sleepTime": 2000,
+      "content": "I'm straight"
+    },
+    {
+      "id": 10, "incoming": false, "goTo": 11,
+      "content": "Ah, I see. Not to be rude, but why are *you* here then?"
+    },
+    {
+      "id": 11, "incoming": true, "goTo": 12, "sleepTime": 2000,
+      "content": "Just looking for some gay guys"
+    },
+    {
+      "id": 12, "incoming": false, "goTo": 13,
+      "content": "I'll be honest, that's pretty weird."
+    },
+    {
+      "id": 13, "incoming": false, "goTo": 14,
+      "content": "Like, are you doing a survey?"
+    },
+    {
+      "id": 14, "incoming": true, "goTo": 15, "sleepTime": 2000,
+      "content": "Nah, nothing like that. Just looking for someone who's into that."
+    },
+    {
+      "id": 15, "incoming": false, "goTo": 16,
+      "content": "Ok, you've definitely piqued my interest. Can I ask why?"
+    },
+    {
+      "id": 16, "incoming": true, "goTo": 17, "sleepTime": 3000,
+      "content": "Looking to get my dick sucked. You down?"
+    },
+    {
+      "id": 17, "incoming": false, "goTo": 18,
+      "content": "Wow"
+    },
+    {
+      "id": 18, "incoming": false, "goTo": 19,
+      "content": "Just. Wow."
+    },
+    {
+      "id": 19, "incoming": false, "goTo": 20,
+      "content": "But, didn't you say you're straight?"
+    },
+    {
+      "id": 20, "incoming": true, "goTo": 21, "sleepTime": 2000,
+      "content": "I am, I'm just saying"
+    },
+    {
+      "id": 21, "incoming": false, "goTo": 22,
+      "content": "I mean I'm not trying to judge or anything, I've just never had a self identified straight man ask for a blowjob before."
+    },
+    {
+      "id": 22, "incoming": true, "goTo": 23, "sleepTime": 4000,
+      "content": "Well?"
+    },
+    {
+      "id": 23, "incoming": false, "goTo": 24,
+      "content": "Damn, dude, you're thirsty as fuck. Just slow it down for a sec."
+    },
+    {
+      "id": 24, "incoming": true, "goTo": 25, "sleepTime": 2000,
+      "content": "Alright, sorry."
+    },
+    {
+      "id": 25, "incoming": false, "goTo": 26,
+      "content": "So, what's the deal? Are you curious?"
+    },
+    {
+      "id": 26, "incoming": true, "goTo": 27, "sleepTime": 4000,
+      "content": "About dudes?"
+    },
+    {
+      "id": 27, "incoming": false, "goTo": 28,
+      "content": "Yeah, I guess"
+    },
+    {
+      "id": 28, "incoming": true, "goTo": 29, "sleepTime": 1000,
+      "content": "No, I'm not into dudes. Just pussy for me."
+    },
+    {
+      "id": 29, "incoming": false, "goTo": 30,
+      "content": "Ok, I mean, not that it's any of my business but..."
+    },
+    {
+      "id": 30, "incoming": false, "goTo": 31,
+      "content": "I'll be honest, I'm not looking to just go suck random dicks."
+    },
+    {
+      "id": 31, "incoming": true, "goTo": 32, "sleepTime": 2000,
+      "content": "I'm totally clean. I don't have any diseases or anything."
+    },
+    {
+      "id": 32, "incoming": false, "goTo": 33,
+      "content": "That's fine. I just mean like, I'm more looking for dates?"
+    },
+    {
+      "id": 33, "incoming": false, "goTo": 34,
+      "content": "Not really random hookups."
+    },
+    {
+      "id": 34, "incoming": true, "goTo": 35, "sleepTime": 3000,
+      "content": "It'll take like 10 minutes. I'll pick you up and you can just do it in the car."
+    },
+    {
+      "id": 35, "incoming": false, "goTo": 36,
+      "content": "Haha dude. Come on. Are you serious?"
+    },
+    {
+      "id": 36, "incoming": true, "goTo": 37, "sleepTime": 2000,
+      "content": "Yeah it'll be quick. It's been a while so I won't need long."
+    },
+    {
+      "id": 37, "incoming": false, "goTo": 38,
+      "content": "Like, my issue isn't how quick you cum?"
+    },
+    {
+      "id": 38, "incoming": false, "goTo": 39,
+      "content": "If you're like, trying to explore your sexuality or something I think that's totally cool, and I'm down to talk about that if you want"
+    },
+    {
+      "id": 39, "incoming": false, "goTo": 40,
+      "content": "But I'm not going to just get in your car and go down on you."
+    },
+    {
+      "id": 40, "incoming": false, "goTo": 41,
+      "content": "Like you're not even offering to reciprocate? Like I should just be honored to blow you?"
+    },
+    {
+      "id": 41, "incoming": true, "goTo": 42, "sleepTime": 3000,
+      "content": "Nah, I'm not sucking a dude's dick."
+    },
+    {
+      "id": 42, "incoming": false, "goTo": 43,
+      "content": "I'm really not asking you to. I'm just saying, do you see where this doesn't really make sense?"
+    },
+    {
+      "id": 43, "incoming": true, "goTo": 44, "sleepTime": 2000,
+      "content": "What if I bring a girl?"
+    },
+    {
+      "id": 44, "incoming": false, "goTo": 45,
+      "content": "Like...to watch?"
+    },
+    {
+      "id": 45, "incoming": true, "goTo": 46, "sleepTime": 1000,
+      "content": "Yeah or whatever"
+    },
+    {
+      "id": 46, "incoming": false, "goTo": 47,
+      "content": "I feel like I've been pretty straightforward that I'm not interested."
+    },
+    {
+      "id": 47, "incoming": true, "goTo": 48, "sleepTime": 4000,
+      "content": "What about a handjob?"
+    },
+    {
+      "id": 48, "incoming": false, "goTo": 49,
+      "content": "Fuck, dude. Give it a rest. No."
+    },
+    {
+      "id": 49, "incoming": true, "goTo": 50, "sleepTime": 2000,
+      "content": "wtf dude. You're being such a bitch. Why not?"
+    },
+    {
+      "id": 50, "incoming": false, "goTo": 51,
+      "content": "cuz I don't wanna fucking blow you!"
+    },
+    {
+      "id": 51, "incoming": true, "goTo": 52, "sleepTime": 3000,
+      "content": "fine, fuck you"
+    },
+    {
+      "id": 52, "incoming": true, "goTo": 53, "sleepTime": 1000,
+      "content": "dick"
+    }
+  ]
+}
