@@ -11,8 +11,10 @@ export default Ember.Component.extend({
     this._super(...arguments);
     this.get('store').query('message', {
       cutieId: this.get('cutie.id')
-    }).then(messages => {this.set('messages', messages);});
-    this.receiveIncomingMessages();
+    }).then(messages => {
+      this.set('messages', messages);
+      this.receiveIncomingMessages();
+    });
   },
 
   didRender() {
@@ -57,14 +59,20 @@ export default Ember.Component.extend({
 
   readNext() {
     this.set('typing', true);
+    this.set('currentCutieId', this.get('cutie.id'));
     sleep(1000).then(() => {
       this.set('typing', false);
-      this.get('cookieStore').pushSeenMessageId(
-        this.get('cutie.id'), this.get('nextMessageId')
-      ); // needs to happen first
-      this.get('seenMessageIds').pushObject(this.get('nextMessageId'));
-      this.scrollChatToBottom();
-      this.receiveIncomingMessages();
+      let currentCutieId = this.get('currentCutieId');
+      if (currentCutieId && this.get('cutie.id') !== currentCutieId) {
+        return;
+      } else {
+        this.get('cookieStore').pushSeenMessageId(
+          this.get('cutie.id'), this.get('nextMessageId')
+        ); // needs to happen first
+        this.get('seenMessageIds').pushObject(this.get('nextMessageId'));
+        this.scrollChatToBottom();
+        this.receiveIncomingMessages();
+      }
     });
   },
 
@@ -74,7 +82,7 @@ export default Ember.Component.extend({
       this.set('currentCutieId', this.get('cutie.id'));
       sleep(this.get('nextMessage.sleepTime')).then(() => {
         let currentCutieId = this.get('currentCutieId');
-        if (currentCutieId && (this.get('cutie.id') !== currentCutieId)) {
+        if (currentCutieId && this.get('cutie.id') !== currentCutieId) {
           return;
         }
         this.readNext();
