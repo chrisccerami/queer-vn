@@ -1,0 +1,108 @@
+{
+  "messages": [
+    {
+      "id": 1, "incoming": true, "goTo": 2,
+      "content": "Hi!"
+    },
+    {
+      "id": 2, "incoming": false, "goTo": 3,
+      "content": "Hey! How's it going today?"
+    },
+    {
+      "id": 3, "incoming": true, "goTo": 4, "sleepTime": 1500,
+      "content": "Ohhh, you know"
+    },
+    {
+      "id": 4, "incoming": true, "goTo": 5, "sleepTime": 700,
+      "content": "Netflix and chill"
+    },
+    {
+      "id": 5, "incoming": true, "goTo": 6, "sleepTime": 1000,
+      "content": "And by that I mean laying in bed watching anime"
+    },
+    {
+      "id": 6, "incoming": false, "goTo": 7,
+      "content": "Sweet, what are you watching?"
+    },
+    {
+      "id": 7, "incoming": true, "goTo": 8, "sleepTime": 3000,
+      "content": "uhhhhhhhhhhh"
+    },
+    {
+      "id": 8, "incoming": true, "goTo": 9, "sleepTime": 1000,
+      "content": "I don't think I should tell you..."
+    },
+    {
+      "id": 9, "incoming": false, "goTo": 10,
+      "content": "Oh? Why, is it something embarassing? 😆"
+    },
+    {
+      "id": 10, "incoming": true, "goTo": 11, "sleepTime": 2000,
+      "content": "...maybe"
+    },
+    {
+      "id": 11, "incoming": false, "goTo": 12,
+      "content": "ha that's cool. I'm not here to judge"
+    },
+    {
+      "id": 12, "incoming": true, "goTo": 13, "sleepTime": 1500,
+      "content": "It's called Sekko Boys. It's about a boy band where all the members are literal marble statues"
+    },
+    {
+      "id": 13, "incoming": false, "goTo": 14,
+      "content": "hahaha oh shit, that's awesome"
+    },
+    {
+      "id": 14, "incoming": false, "goTo": 15,
+      "content": "That reminds me of Akikan. Have you heard of it?"
+    },
+    {
+      "id": 15, "incoming": true, "goTo": 16, "sleepTime": 2000,
+      "content": "Hmmm...I don't think so? Is it also about pop idols made of stone?"
+    },
+    {
+      "id": 16, "incoming": false, "goTo": 17,
+      "content": "Even better. It's about magical girls who transform from soda cans"
+    },
+    {
+      "id": 17, "incoming": false, "goTo": 18,
+      "content": "And they fight to determine what kind of can is the best"
+    },
+    {
+      "id": 18, "incoming": true, "goTo": 19, "sleepTime": 1000,
+      "content": "That. Is. Amazing!"
+    },
+    {
+      "id": 19, "incoming": true, "goTo": 20, "sleepTime": 1500,
+      "content": "You're clearly my kind of trash"
+    },
+    {
+      "id": 20, "incoming": false, "goTo": 21,
+      "content": "I think that's apparent!"
+    },
+    {
+      "id": 21, "incoming": true, "goTo": 22, "sleepTime": 2100,
+      "content": "You're not going to ask for nudes now are you?"
+    },
+    {
+      "id": 22, "incoming": false, "goTo": 23,
+      "content": "It wasn't exactly on the top of my list of to-dos."
+    },
+    {
+      "id": 23, "incoming": true, "goTo": 24, "sleepTime": 700,
+      "content": "That's good. You would have ended up disappointed."
+    },
+    {
+      "id": 24, "incoming": true, "goTo": 25, "sleepTime": 1000,
+      "content": "I'm not really looking to date or hook up or anything"
+    },
+    {
+      "id": 25, "incoming": false, "goTo": 26,
+      "content": "That's cool, you seem like a cool person to hang with."
+    },
+    {
+      "id": 26, "incoming": false, "goTo": 27,
+      "content": ""
+    }
+  ]
+}

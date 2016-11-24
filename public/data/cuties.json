@@ -5,6 +5,8 @@
       "firstName": "Marie",
       "lastName": "Walsh",
       "age": 27,
+      "gender": "Woman",
+      "orientation": "Straight",
       "photoFilename": "http://s3.amazonaws.com/queer-vn/images/placeholder.png",
       "description": "Journalist. U smart? Get at me.\n\nTravel\nCats\nBeer\nStreet Art\nNew food\n***No Man Buns***"
     },
@@ -13,6 +15,8 @@
       "firstName": "Jason",
       "lastName": "Schmidt",
       "age": 22,
+      "gender": "Man",
+      "orientation": "Gayyyy",
       "photoFilename": "http://s3.amazonaws.com/queer-vn/images/placeholder.png",
       "description": "Looking for the Ken to my Ken"
     },
@@ -21,8 +25,20 @@
       "firstName": "Will",
       "lastName": "Reese",
       "age": 29,
+      "gender": "dude",
+      "orientation": "straight",
       "photoFilename": "http://s3.amazonaws.com/queer-vn/images/placeholder.png",
-      "description": ""
+      "description": "nothing too serious"
+    },
+    {
+      "id": 4,
+      "firstName": "Jae Hyun",
+      "lastName": "Nah",
+      "age": 19,
+      "gender": "nope",
+      "orientation": "no thx",
+      "photoFilename": "http://s3.amazonaws.com/queer-vn/images/placeholder.png",
+      "description": "fuck money get pizza\n\ni'm a literal witch"
     }
   ]
 }
